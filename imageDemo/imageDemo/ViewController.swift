@@ -19,7 +19,7 @@ class ViewController: QPBaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     //图片拉伸
     @IBAction func StretchClicked(_ sender: UIButton) {
         let viewController = StretchViewController()

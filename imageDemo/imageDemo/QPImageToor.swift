@@ -63,32 +63,26 @@ class QPImageToor: NSObject {
         UIGraphicsEndImageContext()
         return scaledImage
     }
-
-    static func cutImage(_ image:UIImage, _ rect: CGRect)-> UIImage?{
+    /**裁剪image---此处为正方形*/
+    static func cutImage(_ image:UIImage)-> UIImage?{
         var point = CGPoint.zero
         var size = CGSize.zero
-        if (rect.size.height/rect.size.width) > (image.size.height/image.size.height) {
+        
+        if image.size.width > image.size.height {
             point = CGPoint(x: (image.size.width - image.size.height) * 0.5, y: 0)
             size.height = image.size.height
-            size.width = image.size.height * rect.size.width / rect.size.height
+            size.width = image.size.height
         }else{
             point = CGPoint(x: 0, y: (image.size.height - image.size.width) * 0.5)
             size.width = image.size.width
-            size.height = image.size.width * rect.size.height / rect.size.width
+            size.height = image.size.width
+
         }
-//        if image.size.width > image.size.height {
-//            point = CGPoint(x: (image.size.width - image.size.height) * 0.5, y: 0)
-//            size.width = image.size.height
-//        }else{
-//            point = CGPoint(x: 0, y: (image.size.height - image.size.width) * 0.5)
-//            size.height = image.size.width
-//        }
         
         let imageRef = image.cgImage
         let subImageRef = imageRef!.cropping(to: CGRect(origin: point, size: size))
         let newImage = UIImage(cgImage: subImageRef!)
-        let sizeImage = QPImageToor.upDataImageSize(newImage, rect.size)
-        return sizeImage
+        return newImage
     }
     
     

@@ -20,14 +20,14 @@ class cutImageViewController: QPBaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //切正方形
     func createImage(){
-        let aImage = UIImage(named: "1")
+        let aImage = UIImage(named: "2")
         
-        let rect = CGRect(x: 0, y: 0, width: 200, height: 200)
-        let newImage = QPImageToor.cutImage(aImage!, rect)
-        let imageView = UIImageView(image: newImage);
-        imageView.frame = CGRect(x: 0, y: 64, width: (newImage?.size.width)!, height: (newImage?.size.height)!)
+        let newImage = QPImageToor.cutImage(aImage!)
+        let sizeImage = QPImageToor.upDataImageSize(newImage!, CGSize(width: 200, height: 200))
+        let imageView = UIImageView(image: sizeImage);
+        imageView.frame = CGRect(x: 0, y: 64, width: (sizeImage?.size.width)!, height: (sizeImage?.size.height)!)
         self.view.addSubview(imageView)
     }
     

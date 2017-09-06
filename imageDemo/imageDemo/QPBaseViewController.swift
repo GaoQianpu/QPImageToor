@@ -24,7 +24,6 @@ class QPBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 extension QPBaseViewController{
     func push(_ viewController: UIViewController){
@@ -44,5 +43,6 @@ extension QPBaseViewController{
         let rightBtn = UIBarButtonItem(title: "item", style: .plain, target: self, action: #selector(rightClick(_:)))
         self.navigationItem.rightBarButtonItem = rightBtn;
     }
-    func rightClick(_ item: UIBarButtonItem){}
+    func rightClick(_ item: UIBarButtonItem){
+    }
 }

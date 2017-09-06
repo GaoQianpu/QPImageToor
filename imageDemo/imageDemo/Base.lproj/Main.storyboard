@@ -21,33 +21,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-ix-eAo">
-                                <rect key="frame" x="140" y="294" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-ix-eAo">
+                                <rect key="frame" x="156.5" y="290" width="62" height="30"/>
                                 <state key="normal" title="图片拼接"/>
                                 <connections>
                                     <action selector="puzzleClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3q-eN-oLf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocR-H3-2Td">
-                                <rect key="frame" x="127" y="141" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocR-H3-2Td">
+                                <rect key="frame" x="143" y="164" width="89" height="30"/>
                                 <state key="normal" title="改变图片size"/>
                                 <connections>
                                     <action selector="upDataSizeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfQ-c7-y8Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-Bl-bOI">
-                                <rect key="frame" x="140" y="232" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-Bl-bOI">
+                                <rect key="frame" x="156.5" y="248" width="62" height="30"/>
                                 <state key="normal" title="图片裁剪"/>
                                 <connections>
                                     <action selector="cuteImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rg-wp-tcB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-ko-F5K">
-                                <rect key="frame" x="140" y="186" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-ko-F5K">
+                                <rect key="frame" x="156" y="206" width="62" height="30"/>
                                 <state key="normal" title="图片拉伸"/>
                                 <connections>
                                     <action selector="StretchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyw-Db-Zuy"/>
@@ -55,6 +51,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ocR-H3-2Td" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Lhd-aZ-nfx"/>
+                            <constraint firstItem="c9N-ko-F5K" firstAttribute="top" secondItem="ocR-H3-2Td" secondAttribute="bottom" constant="12" id="QCf-Ia-19L"/>
+                            <constraint firstItem="hlI-Bl-bOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sej-zg-pFz"/>
+                            <constraint firstItem="Ce0-ix-eAo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDA-5m-JtG"/>
+                            <constraint firstItem="c9N-ko-F5K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zn4-8R-3yg"/>
+                            <constraint firstItem="Ce0-ix-eAo" firstAttribute="top" secondItem="hlI-Bl-bOI" secondAttribute="bottom" constant="12" id="f6a-56-bQQ"/>
+                            <constraint firstItem="hlI-Bl-bOI" firstAttribute="top" secondItem="c9N-ko-F5K" secondAttribute="bottom" constant="12" id="knz-08-oRV"/>
+                            <constraint firstItem="ocR-H3-2Td" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ty7-fR-q5A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xM9-JU-H6Y"/>
                 </viewController>
