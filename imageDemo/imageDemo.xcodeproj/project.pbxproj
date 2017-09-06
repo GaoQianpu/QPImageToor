@@ -17,7 +17,7 @@
 		F17295521F586E8900BAA12A /* StretchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17295511F586E8900BAA12A /* StretchViewController.swift */; };
 		F17295541F58705400BAA12A /* QPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17295531F58705400BAA12A /* QPBaseViewController.swift */; };
 		F1C5C00A1F5D0C6700EBA52A /* cutImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5C0091F5D0C6700EBA52A /* cutImageViewController.swift */; };
-		F1C5C00C1F5EA87500EBA52A /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5C00B1F5EA87500EBA52A /* PuzzleViewController.swift */; };
+		F1C5C00C1F5EA87500EBA52A /* puzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5C00B1F5EA87500EBA52A /* puzzleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		F17295511F586E8900BAA12A /* StretchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchViewController.swift; sourceTree = "<group>"; };
 		F17295531F58705400BAA12A /* QPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QPBaseViewController.swift; sourceTree = "<group>"; };
 		F1C5C0091F5D0C6700EBA52A /* cutImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cutImageViewController.swift; sourceTree = "<group>"; };
-		F1C5C00B1F5EA87500EBA52A /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
+		F1C5C00B1F5EA87500EBA52A /* puzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				F17295511F586E8900BAA12A /* StretchViewController.swift */,
 				F11650651F5CFD980056072F /* upDataSizeViewController.swift */,
 				F1C5C0091F5D0C6700EBA52A /* cutImageViewController.swift */,
-				F1C5C00B1F5EA87500EBA52A /* PuzzleViewController.swift */,
+				F1C5C00B1F5EA87500EBA52A /* puzzleViewController.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				F11650661F5CFD980056072F /* upDataSizeViewController.swift in Sources */,
 				F17295521F586E8900BAA12A /* StretchViewController.swift in Sources */,
 				F17295391F58636400BAA12A /* AppDelegate.swift in Sources */,
-				F1C5C00C1F5EA87500EBA52A /* PuzzleViewController.swift in Sources */,
+				F1C5C00C1F5EA87500EBA52A /* puzzleViewController.swift in Sources */,
 				F17295541F58705400BAA12A /* QPBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

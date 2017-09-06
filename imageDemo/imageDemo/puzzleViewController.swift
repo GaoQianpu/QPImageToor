@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PuzzleViewController: QPBaseViewController {
+class puzzleViewController: QPBaseViewController {
 
     
     override func viewDidLoad() {
@@ -25,9 +25,9 @@ class PuzzleViewController: QPBaseViewController {
     //多张图片的拼接
     func puzzImage(){
         
-        let image1 = UIImage(named: "1")
+        let image1 = UIImage(named: "3")
         let image2 = UIImage(named: "2")
-        //讲两张图设置为等宽
+        //将两张图设置为等宽
         let im1 = QPImageToor.upDataImageSize(image1!, CGSize(width: 200, height: 200 * (image1?.size.height)! / (image1?.size.width)!))
         let im2 = QPImageToor.upDataImageSize(image2!, CGSize(width: 200, height: 200 * (image2?.size.height)! / (image2?.size.width)!))
         

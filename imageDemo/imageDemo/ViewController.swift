@@ -37,7 +37,7 @@ class ViewController: QPBaseViewController {
     }
     //图片拼接
     @IBAction func puzzleClicked(_ sender: UIButton) {
-        let viewController = PuzzleViewController()
+        let viewController = puzzleViewController()
         push(viewController)
     }
 }
